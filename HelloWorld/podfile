@@ -1,0 +1,4 @@
+target 'HelloWorld' do
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+end

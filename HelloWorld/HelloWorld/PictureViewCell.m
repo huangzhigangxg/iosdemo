@@ -7,16 +7,16 @@
 
 #import "PictureViewCell.h"
 #import <SDWebImage.h>
+
 @implementation PictureViewCell
 
 
--(instancetype)initWithFrame:(CGRect)frame{
+-(instancetype)initWithFrame:(CGRect)frame {
     self=[super initWithFrame:frame];
-    if(self){
+    if (self) {
         self.imageView=[[UIImageView alloc] initWithFrame:self.frame];
         //self.imageView.contentMode=UIViewContentModeScaleAspectFit;
         [self.contentView addSubview:self.imageView];
-        
     }
      
     self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -32,10 +32,10 @@
 }
 
 -(void)layoutPictureViewCell:(NSString *)urlString {
-    
-    //self.imageView.image=[UIImage imageNamed:@"1.png"];
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:urlString] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:urlString] 
+                             completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         //NSLog(@"hu: %@", urlString);
     }];
 }
+
 @end

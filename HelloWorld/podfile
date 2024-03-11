@@ -1,4 +1,5 @@
 target 'HelloWorld' do
     pod 'AFNetworking'
     pod 'SDWebImage'
+    pod 'MJRefresh'
 end

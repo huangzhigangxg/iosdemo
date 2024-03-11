@@ -9,8 +9,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PictureViewCell : UICollectionViewCell
+
 @property (nonatomic,strong,readwrite) UIImageView *imageView;
+
 -(void)layoutPictureViewCell:(NSString *)urlString;
+
 @end
 
 

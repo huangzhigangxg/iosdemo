@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SearchBar : UIView
+
 @property(nonatomic,strong,readwrite)NSString *userInputString;
+
 @property(nonatomic,strong,readwrite)UITextField *textField;
 
 @end

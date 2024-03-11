@@ -6,10 +6,10 @@
 //
 
 #import "PictureViewCell.h"
-#import <SDWebImage.h>
+#import <SDWebImage.h> //建议包含框架
 
 @implementation PictureViewCell
-
+//多余空行
 
 -(instancetype)initWithFrame:(CGRect)frame {
     self=[super initWithFrame:frame];
